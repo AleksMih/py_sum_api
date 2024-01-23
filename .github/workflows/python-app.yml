@@ -38,6 +38,3 @@ jobs:
       run: |
         pip install pytest
         pytest
-        curl -X 'GET' \
-        'http://127.0.0.1:8000/sum?a=2&b=3' \
-        -H 'accept: application/json'
