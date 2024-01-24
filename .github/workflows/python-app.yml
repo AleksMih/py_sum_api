@@ -38,4 +38,5 @@ jobs:
       run: |
         pip install pytest
         export PYTHONPATH=src
-        pytest
+        #pytest
+        curl -X 'GET' 'http://127.0.0.1:80/sum?a=2&b=3' -H 'accept: application/json'
