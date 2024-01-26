@@ -41,6 +41,6 @@ jobs:
         python -m venv .venv
         source .venv/bin/activate
         uvicorn main:app --reload
-        pytest
+        curl -X 'GET' 'http://127.0.0.1:80/sum?a=2&b=3' -H 'accept: application/json'
+        #pytest  
         
-        #curl -X 'GET' 'http://127.0.0.1:80/sum?a=2&b=3' -H 'accept: application/json'
